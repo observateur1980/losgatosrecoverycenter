@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title">Search Result</div>
+                
+            </div>
+        </div>
+        
+
+        
+        {% for object in object_list %}
+        
+        <div class="row about_row row-eq-height">
+                <div class="col-lg-4">
+                        <div class="about_image"><img src="{{object.articlecover}}" alt="" width="250" height="180"></div>
+                    </div>
+                <div class="col-lg-8">
+                    <div class="about_text_2">
+                        <h3>{{object.title}}</h3>
+                        <p>{{object.text}}</p>
+                    </div>
+                </div>
+                
+        </div>
+        {% endfor %}
+        
+        
+       
+        
+       
+        
+        	
+
+        
+        
+    </div>
+</div>
+
+
+
+
+
+   
+{% endblock %}

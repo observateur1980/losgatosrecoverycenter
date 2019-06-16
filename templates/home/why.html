@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- About -->
+
+<div class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title">Why our program works</div>
+					
+				</div>
+			</div>
+			<div class="row about_row row-eq-height">
+			
+				<div class="col-lg-8">
+					<div class="about_text_2">
+						<h3>Recovery is possible</h3>
+						<p>Substance abuse, addiction, and mental health issues don't own you.  Not only will we help you get unstuck, we will show you how to calmly live side by side with cravings, desires, thoughts, feelings, memories, people, and situations.  Join us at the watering hole.  It is possible to be at peace with yourself and others.   </p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="about_image"><img src="{% static 'images/why1.jpg' %}" alt="" width="250" height="250"></div>
+				</div>
+			</div>
+
+			<div class="row about_row row-eq-height">
+					<div class="col-lg-4">
+							<div class="about_image"><img src="{% static 'images/why2.jpg' %}" alt="" width="250" height="250"></div>
+						</div>
+					<div class="col-lg-8">
+						<div class="about_text_2">
+							<h3>Experience reality</h3>
+							<p>We live in a stressful world where demands are high and performance is rated.  Thus, our treatment program is not a sterile bubble nor a vacation.  You will be in real life, learning about life, dealing with real life, while in the skillful hands of trained and compassionate down to earth, feet on the ground, dealing with real life staff.   </p>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="row about_row row-eq-height">
+			
+						<div class="col-lg-8">
+							<div class="about_text_2">
+								<h3>Resolve core issues</h3>
+								<p>Getting to the root of addiction is the foundation of our program.  Our cutting-edge approach utilizes the best of what neuroscience recommends for resolving chronic, underlying issues behind addiction.</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="about_image"><img src="{% static 'images/why3.jpg' %}" alt="" width="250" height="250"></div>
+						</div>
+					</div>
+
+					<div class="row about_row row-eq-height">
+							<div class="col-lg-4">
+									<div class="about_image"><img src="{% static 'images/why4.jpg' %}" alt="" width="250" height="250"></div>
+								</div>
+							<div class="col-lg-8">
+								<div class="about_text_2">
+									<h3>Learn life skills</h3>
+									<p>Life is demanding.  Getting sober can be challenging.  Staying sober is a skill!  We will teach you a variety of solution-focused, skill building techniques to help you navigate career, relationship and transitional life issues calmly and effectively.  12-Step option available.</p>
+								</div>
+							</div>
+						
+						</div>
+						<br>
+
+						<div class="row about_row row-eq-height">
+			
+								<div class="col-lg-8">
+									<div class="about_text_2">
+										<h3>Maintain momentum</h3>
+										<p>Congratulations to all who get and stay sober in this challenging world!  We welcome all alumni to attend groups and events (as long as there is an extra chair) to continue learning, growing, and giving back to others.  Join in, volunteer, make a difference.  You are part of our tribe.</p>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="about_image"><img src="{% static 'images/why5.jpg' %}" alt="" width="250" height="250"></div>
+								</div>
+							</div>
+			
+		</div>
+	</div>
+
+    <script>
+            $('#whymenu').css('text-decoration',  'underline')
+    </script>
+
+{% endblock %}

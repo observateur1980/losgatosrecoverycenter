@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title">What it all costs</div>
+                
+            </div>
+        </div>
+        <div class="row about_row row-eq-height">
+        
+            <div class="col-lg-8">
+                <div class="about_text_2">
+                    <h3>Recovery is possible</h3>
+                    <p>We accept insurance and private pay.  Fees and payment options depend on many factors.  We will work with you as much as possible to ensure you can get the help you need at a price you can afford.  Call us for a free consultation.  We'll discuss your situation and decide together which program and financial option works best for you.  </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="about_image"><img src="{% static 'images/howmuch1.jpg' %}" alt="" width="250" height="250"></div>
+            </div>
+        </div>
+
+    
+
+                
+        
+    </div>
+</div>
+
+
+
+
+    <script>
+            $('#howmuchmenu').css('text-decoration',  'underline')
+    </script>
+
+{% endblock %}

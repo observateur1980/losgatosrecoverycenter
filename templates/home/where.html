@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 25px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 500px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title">Program Locations</div>
+                
+            </div>
+        </div>
+        <div class="row about_row row-eq-height">
+    <div class="column" >
+        <h3><center>The Center</center></h3>
+        <img src="{% static 'images/the center.jpg'%}" alt="Snow" style="width:100%" height="200" width="300">
+        <p >
+            <ul style="font-size: 20px!important;">
+                <li>&#9632; Offices</li>
+                <li>&#9632; Group therapy</li>
+                <li>&#9632; Individual therapy</li>
+                <li>&#9632; Medical center</li>
+                    
+            </ul>
+        </p>
+        </div>
+                      
+    <div class="column" >
+        <h3><center>The Tree House</center></h3>
+        <img src="{% static 'images/treehouse.jpg'%}" alt="Snow" style="width:100%" height="200" width="300">
+        <p>
+            <ul style="font-size: 20px!important;">
+                <li>&#9632; Detox</li>
+                <li>&#9632; Residential</li>
+                
+                    
+            </ul>
+        </p>
+        </div>
+        <div class="column" >
+            <h3><center>The Villa</center></h3>
+            <img src="{% static 'images/villa.jpg' %}" alt="Snow" style="width:100%" height="200" width="300">
+            <p >
+                <ul style="font-size: 20px!important;">
+                    <li>&#9632; Sober Living</li>
+                    <li>&#9632; Recovery Retreats</li>
+                    <li>&#9632; Intensives</li>
+                        
+                </ul>
+            </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+    <script>
+            $('#wheremenu').css('text-decoration',  'underline')
+    </script>
+
+{% endblock %}
